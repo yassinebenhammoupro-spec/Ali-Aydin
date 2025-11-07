@@ -1,0 +1,772 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;&lt;span class="lang-en"&gt;Op. Dr. Ali AYDIN - Urology &amp; Andrology Specialist&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Op. Dr. Ali AYDIN - Spécialiste en Urologie et Andrologie&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Op. Dr. Ali AYDIN - Üroloji ve Androloji Uzmanı&lt;/span&gt;&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Load Tailwind CSS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Load Font Inter --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f7f9fc;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-heading {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 6px solid #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #1f2937;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-shadow {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.primary-color {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-primary-color {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Hide all language content by default */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-en.hidden, .lang-fr.hidden, .lang-tr.hidden {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Flag styling */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flag-button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.1s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* New styles for text buttons */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.875rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-width: 2.5rem; /* 40px */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #e5e7eb; /* light gray border */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff; /* white bg */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #374151; /* gray text */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flag-button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9fafb; /* light gray hover */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flag-button.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 0 0 3px #0056b3, 0 0 0 5px #fff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* New active styles */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="text-gray-700"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation Bar --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="sticky top-0 z-50 bg-white shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#home" class="flex items-center space-x-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Branded Logo SVG --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="w-8 h-8 primary-color" viewBox="0 0 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;path d="M100 10 L190 190 L170 190 L100 50 L30 190 L10 190 Z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;path d="M100 130 L130 190 L70 190 Z" fill="white"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="text-2xl font-bold primary-color"&gt;Op. Dr. Ali AYDIN&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Desktop Menu --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex items-center space-x-6 text-sm font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#career" class="hover:primary-color transition duration-200"&gt;&lt;span class="lang-en"&gt;Career&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Carrière&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kariyer&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#erectile-dysfunction" class="hover:primary-color transition duration-200"&gt;&lt;span class="lang-en"&gt;Erectile Dysfunction&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Dysfonction Érectile&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Sertleşme Bozukluğu&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#premature-ejaculation" class="hover:primary-color transition duration-200"&gt;&lt;span class="lang-en"&gt;Premature Ejaculation&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Éjaculation Précoce&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Erken Boşalma&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#peyronies-disease" class="hover:primary-color transition duration-200"&gt;&lt;span class="lang-en"&gt;Peyronie's Disease&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Maladie de La Peyronie&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Peyronie Hastalığı&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#llm-explainer" class="hover:primary-color transition duration-200"&gt;&lt;span class="lang-en"&gt;AI Explainer&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Explicateur IA&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Yapay Zeka Açıklayıcı&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="px-4 py-2 bg-primary-color text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;Contact Us&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Contactez-nous&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Bize Ulaşın&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Language Switcher and Mobile Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center space-x-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex space-x-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- English Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="lang-en-btn" class="flag-button" data-lang="en"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>EN</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- French Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="lang-fr-btn" class="flag-button" data-lang="fr"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>FR</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Turkish Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="lang-tr-btn" class="flag-button" data-lang="tr"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>TR</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Mobile Menu Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="mobile-menu-button" class="md:hidden p-2 text-gray-700 hover:text-blue-600 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Mobile Menu Dropdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner pb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#career" class="block px-4 py-2 text-sm hover:bg-gray-100 transition duration-200"&gt;&lt;span class="lang-en"&gt;Career Overview&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Aperçu de la Carrière&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kariyer Özeti&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#erectile-dysfunction" class="block px-4 py-2 text-sm hover:bg-gray-100 transition duration-200"&gt;&lt;span class="lang-en"&gt;Erectile Dysfunction&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Dysfonction Érectile&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Sertleşme Bozukluğu&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#premature-ejaculation" class="block px-4 py-2 text-sm hover:bg-gray-100 transition duration-200"&gt;&lt;span class="lang-en"&gt;Premature Ejaculation&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Éjaculation Précoce&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Erken Boşalma&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#peyronies-disease" class="block px-4 py-2 text-sm hover:bg-gray-100 transition duration-200"&gt;&lt;span class="lang-en"&gt;Peyronie's Disease&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Maladie de La Peyronie&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Peyronie Hastalığı&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#llm-explainer" class="block px-4 py-2 text-sm hover:bg-gray-100 transition duration-200"&gt;&lt;span class="lang-en"&gt;AI Explainer&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Explicateur IA&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Yapay Zeka Açıklayıcı&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="block px-4 py-2 text-sm hover:bg-gray-100 transition duration-200"&gt;&lt;span class="lang-en"&gt;Contact Us&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Contactez-nous&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Bize Ulaşın&lt;/span&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="home" class="py-16 md:py-24 bg-white rounded-xl card-shadow mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="md:flex md:items-center md:space-x-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 mb-8 md:mb-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold primary-color leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Op. Dr. Ali AYDIN</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-2xl sm:text-3xl text-gray-500 mt-2 font-light"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Urology and Andrology Specialist&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-fr hidden"&gt;Spécialiste en Urologie et Andrologie&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-tr hidden"&gt;Üroloji ve Androloji Uzmanı&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mt-6 text-lg text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Offering specialized applications and advanced therapies for urological health, focusing on minimally invasive and patient-centered treatment options. Your health is our foremost concern.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-fr hidden"&gt;Offrant des applications spécialisées et des thérapies avancées pour la santé urologique, axées sur des options de traitement peu invasives et centrées sur le patient. Votre santé est notre principale préoccupation.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-tr hidden"&gt;Ürolojik sağlık için minimal invaziv ve hasta merkezli tedavi seçeneklerine odaklanarak uzmanlaşmış uygulamalar ve gelişmiş terapiler sunuyoruz. Sağlığınız bizim öncelikli endişemizdir.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#contact" class="inline-block px-8 py-3 bg-primary-color text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Book an Appointment&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Prendre Rendez-vous&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Randevu Alın&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 flex justify-center items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Branded Logo in Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="w-48 h-48 sm:w-64 sm:h-64 bg-gray-200 rounded-full flex items-center justify-center border-4 border-primary-color p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>&lt;svg class="w-full h-full primary-color" viewBox="0 0 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;path d="M100 10 L190 190 L170 190 L100 50 L30 190 L10 190 Z"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;path d="M100 130 L130 190 L70 190 Z" fill="#f7f9fc"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Career Overview Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="career" class="py-12 bg-white rounded-xl card-shadow p-6 sm:p-10 mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl font-bold section-heading"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Education and Career Overview&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Aperçu de la Formation et de la Carrière&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Eğitim ve Kariyer Özeti&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Vertical Line --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-200 hidden sm:block"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Timeline Items --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative pl-6 sm:pl-10 pb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="absolute left-0 top-1.5 w-6 h-6 bg-primary-color rounded-full border-4 border-white hidden sm:block"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm font-semibold primary-color mb-1"&gt;1994-2001&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-bold text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Faculty of Medicine&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Faculté de Médecine&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Tıp Fakültesi&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Istanbul University Cerrahpaşa Faculty of Medicine&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Faculté de Médecine Cerrahpaşa de l'Université d'Istanbul&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative pl-6 sm:pl-10 pb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="absolute left-0 top-1.5 w-6 h-6 bg-primary-color rounded-full border-4 border-white hidden sm:block"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm font-semibold primary-color mb-1"&gt;2006-2012&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-bold text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Urological Specialization&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Spécialisation en Urologie&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Üroloji İhtisası&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Fatih Sultan Mehmet Training and Research Hospital Urology Department&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Département d'Urologie de l'Hôpital de Formation et de Recherche Fatih Sultan Mehmet&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Fatih Sultan Mehmet Eğitim ve Araştırma Hastanesi Üroloji Bölümü&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative pl-6 sm:pl-10 pb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="absolute left-0 top-1.5 w-6 h-6 bg-primary-color rounded-full border-4 border-white hidden sm:block"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm font-semibold primary-color mb-1"&gt;2012-2015&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-bold text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Urologist (State Hospitals)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Urologue (Hôpitaux d'État)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Ürolog (Devlet Hastaneleri)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Urology Specialist at Niğde State Hospital and Beykoz State Hospital&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Spécialiste en Urologie à l'Hôpital d'État de Niğde et à l'Hôpital d'État de Beykoz&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Niğde Devlet Hastanesi ve Beykoz Devlet Hastanesi Üroloji Uzmanı&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative pl-6 sm:pl-10 pb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="absolute left-0 top-1.5 w-6 h-6 bg-primary-color rounded-full border-4 border-white hidden sm:block"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm font-semibold primary-color mb-1"&gt;2016 - &lt;span class="lang-en"&gt;Present&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Aujourd'hui&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Günümüz&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-bold text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Private Practice&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Pratique Privée&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Özel Muayenehane&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Specialized applications and therapies at Aydın Clinic&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Applications et thérapies spécialisées à la Clinique Aydın&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Aydın Kliniği'nde uzmanlaşmış uygulamalar ve terapiler&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Treatments Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="treatments" class="py-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-4xl font-extrabold text-center primary-color mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Specialized Urological Treatments&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Traitements Urologiques Spécialisés&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Uzmanlaşmış Ürolojik Tedaviler&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Erectile Dysfunction --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="erectile-dysfunction" class="bg-white rounded-xl card-shadow p-6 sm:p-10 mb-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-2xl sm:text-3xl font-bold primary-color mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;Erectile Dysfunction Therapies&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-fr hidden"&gt;Thérapies contre la Dysfonction Érectile&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-tr hidden"&gt;Sertleşme Bozukluğu Tedavileri&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- ESWT Shockwave Therapy --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;ESWT Shockwave Therapy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Thérapie par Ondes de Choc ESWT&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;ESWT Şok Dalga Tedavisi&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;**Application Domains:** Erectile Dysfunction, Peyronie's Disease, Chronic Prostatitis.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;**Domaines d'Application :** Dysfonction Érectile, Maladie de La Peyronie, Prostatite Chronique.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;**Uygulama Alanları:** Sertleşme Bozukluğu, Peyronie Hastalığı, Kronik Prostatit.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Medication-free therapy&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Thérapie sans médicaments&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;İlaçsız tedavi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Minimally invasive&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Minimally invasive&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Minimal invaziv&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief session duration&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte durée de session&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa seans süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;No anesthesia necessary&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Aucune anesthésie nécessaire&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Anestezi gerektirmez&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Stem Cell Applications --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Stem Cell Applications in Penile Therapy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Applications de Cellules Souches en Thérapie Pénienne&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Penil Tedavide Kök Hücre Uygulamaları&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;**Procedure:** Micrograft extraction (behind the ear) $\rightarrow$ Tissue preparation $\rightarrow$ Pain-free application to the penis.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;**Procédure :** Extraction de microgreffe (derrière l'oreille) $\rightarrow$ Préparation des tissus $\rightarrow$ Application sans douleur au pénis.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;**Prosedür:** Kulak arkasından mikrogreft alımı $\rightarrow$ Doku hazırlama $\rightarrow$ Penise ağrısız uygulama.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief application duration&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte durée d'application&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa uygulama süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Regional anesthesia (pain-free)&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Anesthésie régionale (sans douleur)&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Bölgesel anestezi (ağrısız)&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Resumption of daily activities on the same day&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Reprise des activités quotidiennes le jour même&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Aynı gün günlük aktivitelere devam edebilme&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Exosome Utilization --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-2 bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Exosome Utilization in Penile Therapy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Utilisation d'Exosomes en Thérapie Pénienne&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Penil Tedavide Eksozom Kullanımı&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Nanoscopic vesicles isolated and purified from platelet-derived plasma, which regulate cell renewal and tissue repair.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Vésicules nanoscopiques isolées et purifiées à partir de plasma dérivé de plaquettes, qui régulent le renouvellement cellulaire et la réparation tissulaire.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Hücre yenilenmesini ve doku onarımını düzenleyen, trombosit türevli plazmadan izole ve saflaştırılmış nanoskobik veziküller.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief application period&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte période d'application&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa uygulama süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Pain-free administration using local anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Administration sans douleur utilisant une anesthésie locale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Lokal anestezi ile ağrısız uygulama&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Does not necessitate general anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Ne nécessite pas d'anesthésie générale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Genel anestezi gerektirmez&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Ability to maintain daily routines on the same day&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Possibilité de maintenir les routines quotidiennes le jour même&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Aynı gün günlük rutinlere devam edebilme&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Premature Ejaculation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="premature-ejaculation" class="bg-white rounded-xl card-shadow p-6 sm:p-10 mb-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-2xl sm:text-3xl font-bold primary-color mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;Premature Ejaculation Therapy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-fr hidden"&gt;Thérapie contre l'Éjaculation Précoce&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-tr hidden"&gt;Erken Boşalma Tedavisi&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 gap-8 items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Botulinum Toxin (Botox) Administration to the Glans Penis&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Administration de Toxine Botulique (Botox) au Gland du Pénis&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Penis Başına Botulinum Toksini (Botoks) Uygulaması&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;The toxin is injected into the glans penis area to treat premature ejaculation issues.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;La toxine est injectée dans la zone du gland du pénis pour traiter les problèmes d'éjaculation précoce.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Toksin, erken boşalma sorunlarını tedavi etmek amacıyla penis başına enjekte edilir.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold text-gray-700 mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Operational Mechanism:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Mécanisme Opérationnel :&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Operasyon Mekanizması:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Reduces nerve ending hypersensitivity.&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Réduit l'hypersensibilité des terminaisons nerveuses.&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Sinir ucu aşırı duyarlılığını azaltır.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Prolongs ejaculation duration.&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Prolonge la durée de l'éjaculation.&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Boşalma süresini uzatır.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Enhances ejaculatory control.&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Améliore le contrôle de l'éjaculation.&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Boşalma kontrolünü artırır.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold text-gray-800 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Advantages:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Avantages :&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Avantajlar:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief application duration&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte durée d'application&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa uygulama süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Pain-free procedure with local anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Procédure sans douleur avec anesthésie locale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Lokal anestezi ile ağrısız prosedür&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;No requirement for general anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Aucune exigence d'anesthésie générale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Genel anestezi gerektirmez&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Ability to resume daily activities on the same day&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Possibilité de reprendre les activités quotidiennes le jour même&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Aynı gün günlük aktivitelere devam edebilme&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Peyronie's Disease --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="peyronies-disease" class="bg-white rounded-xl card-shadow p-6 sm:p-10 mb-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-2xl sm:text-3xl font-bold primary-color mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;Peyronie's Disease Management&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-fr hidden"&gt;Gestion de la Maladie de La Peyronie&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-tr hidden"&gt;Peyronie Hastalığı Yönetimi&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 gap-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- ESWT Shockwave Therapy for Peyronie's --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;ESWT Shockwave Therapy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Thérapie par Ondes de Choc ESWT&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;ESWT Şok Dalga Tedavisi&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Non-invasive shock wave therapy technique for addressing penile curvature.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Technique de thérapie par ondes de choc non invasive pour traiter la courbure du pénis.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Penil eğriliği gidermeye yönelik non-invaziv şok dalgası terapi tekniği.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Non-pharmacological and non-surgical treatment&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Traitement non pharmacologique et non chirurgical&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;İlaçsız ve cerrahi olmayan tedavi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief session duration&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte durée de session&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa seans süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Does not necessitate anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Ne nécessite pas d'anesthésie&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Anestezi gerektirmez&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Intraplate Collagenase Enzyme Administration --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Intraplate Collagenase Enzyme Administration&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Administration d'Enzyme Collagénase Intra-plaque&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Plak İçi Kolajenaz Enzim Uygulaması&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;A single injection that dissolves the plaque, correcting the curvature by breaking down Peyronie's plaque.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Une seule injection qui dissout la plaque, corrigeant la courbure en décomposant la plaque de La Peyronie.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Plağı çözen, Peyronie plağını parçalayarak eğriliği düzelten tek bir enjeksiyon.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief application period&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte période d'application&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa uygulama süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Pain-free administration using local anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Administration sans douleur utilisant une anesthésie locale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Lokal anestezi ile ağrısız uygulama&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;The chance to maintain daily routines on the same day&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;La possibilité de maintenir les routines quotidiennes le jour même&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Aynı gün günlük rutinlere devam edebilme&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Penis Enlargement --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="penis-enlargement" class="bg-white rounded-xl card-shadow p-6 sm:p-10 mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-2xl sm:text-3xl font-bold primary-color mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;Penis Enlargement through Non-Surgical Enzyme Therapy&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-fr hidden"&gt;Augmentation Pénienne par Thérapie Enzymatique Non Chirurgicale&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-tr hidden"&gt;Cerrahi Olmayan Enzim Tedavisi ile Penis Büyütme&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-2 gap-8 items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="text-xl font-semibold mb-3 text-gray-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Lipase Enzyme Injection&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Injection d'Enzyme Lipase&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Lipaz Enzimi Enjeksiyonu&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mb-4 text-sm text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;A non-surgical enzymatic approach to penile enlargement, yielding effective results after a single session.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Une approche enzymatique non chirurgicale de l'augmentation pénienne, donnant des résultats efficaces après une seule session.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Tek bir seans sonrasında etkili sonuçlar veren, penis büyütmede cerrahi olmayan enzimatik bir yaklaşım.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-50 p-6 rounded-lg border border-blue-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold text-gray-800 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-en"&gt;Advantages:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-fr hidden"&gt;Avantages :&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="lang-tr hidden"&gt;Avantajlar:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-1 text-sm text-gray-600 list-disc list-inside"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Brief application duration&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Courte durée d'application&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Kısa uygulama süresi&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Pain-free procedure with local anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Procédure sans douleur avec anesthésie locale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Lokal anestezi ile ağrısız prosedür&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;No requirement for general anesthesia&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Aucune exigence d'anesthésie générale&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Genel anestezi gerektirmez&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;span class="lang-en"&gt;Ability to resume daily activities on the same day&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;Possibilité de reprendre les activités quotidiennes le jour MêME&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;Aynı gün günlük aktivitelere devam edebilme&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Gemini LLM Feature: Medical Explainer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="llm-explainer" class="py-12 bg-gray-100 rounded-xl card-shadow p-6 sm:p-10 mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl font-bold primary-color mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Medical Terminology Explainer ✨&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Explicateur de Terminologie Médicale ✨&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Tıbbi Terminoloji Açıklayıcı ✨&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-lg text-gray-700 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Need a complex medical term from this site or elsewhere simplified? Type it below, and our AI assistant will provide an easy-to-understand explanation, grounded with current information. The response will be in the language currently selected on the page.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Besoin d'un terme médical complexe de ce site ou d'ailleurs simplifié ? Tapez-le ci-dessous, et notre assistant IA fournira une explication facile à comprendre, étayée par des informations actuelles. La réponse sera dans la language actuellement sélectionnée sur la page.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Bu sitedeki veya başka bir yerdeki karmaşık bir tıbbi terimin basitleştirilmesine mi ihtiyacınız var? Aşağıya yazın, yapay zeka asistanımız güncel bilgilerle desteklenmiş, kolay anlaşılır bir açıklama sunacaktır. Cevap, sayfada seçili olan dilde olacaktır.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="text" id="term-input"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                       </span>placeholder="e.g., Exosome Utilization, Chronic Prostatitis, Ureter | Örn: Eksozom Kullanımı, Kronik Prostatit, Üreter"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                       </span>class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition duration-150" aria-label="Medical term input"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="explain-button" class="w-full md:w-auto px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-200 flex items-center justify-center disabled:opacity-50" aria-controls="explanation-output" aria-live="polite"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.103a2.404 2.404 0 00-3.41 0L12 8.59l-2.208 2.208-2.208-2.208a2.404 2.404 0 00-3.41 3.41l4.208 4.208a2.404 2.404 0 003.41 0l4.208-4.208a2.404 2.404 0 000-3.41z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;✨ Explain this Term&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-fr hidden"&gt;✨ Expliquer ce Terme&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-tr hidden"&gt;✨ Bu Terimi Açıkla&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="explanation-output" class="mt-6 p-4 bg-white rounded-lg border border-gray-200 hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-xl font-bold primary-color mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;Explanation:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-fr hidden"&gt;Explication :&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-tr hidden"&gt;Açıklama:&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p id="explanation-text" class="text-gray-700 leading-relaxed"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="explanation-sources" class="text-sm mt-4 pt-2 border-t border-gray-100 hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold text-gray-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Sources (for grounding):&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-fr hidden"&gt;Sources (pour étayage) :&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-tr hidden"&gt;Kaynaklar (doğrulama için):&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul id="source-list" class="list-disc pl-5 text-gray-500 space-y-1"&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="loading-indicator" class="mt-6 hidden flex items-center space-x-2 text-primary-color font-semibold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="animate-spin h-5 w-5 text-primary-color" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"&gt;&lt;/circle&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"&gt;&lt;/path&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Analyzing term...&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Analyse du terme en cours...&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Terim analiz ediliyor...&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p id="error-message" class="mt-4 text-red-500 font-semibold hidden"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Contact Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="contact" class="py-12 bg-primary-color text-white rounded-xl card-shadow p-6 sm:p-10 mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl font-bold mb-6 border-b border-blue-300 pb-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Contact Us&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Contactez-nous&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Bize Ulaşın&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-lg mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;We invite you to reach out with any inquiries or to schedule an appointment. Your health is our foremost concern.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-fr hidden"&gt;Nous vous invitons à nous contacter pour toute question ou pour prendre rendez-vous. Votre santé est notre principale préoccupation.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-tr hidden"&gt;Tüm sorularınız veya randevu almak için bize ulaşabilirsiniz. Sağlığınız bizim öncelikli endişemizdir.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center space-x-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold"&gt;&lt;span class="lang-en"&gt;PHONE&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;TÉLÉPHONE&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;TELEFON&lt;/span&gt; : +90 (538) 935 70 72&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center space-x-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold"&gt;&lt;span class="lang-en"&gt;E-MAIL&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;E-MAIL&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;E-POSTA&lt;/span&gt; : info@opdraliaydin.com&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center space-x-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-2.414-2.414a1 1 0 00-.707-.293H10a2 2 0 00-2 2v10a2 2 0 002 2z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="font-semibold"&gt;&lt;span class="lang-en"&gt;WEBSITE&lt;/span&gt;&lt;span class="lang-fr hidden"&gt;SITE WEB&lt;/span&gt;&lt;span class="lang-tr hidden"&gt;WEB SİTESİ&lt;/span&gt; : www.opdraliaydin.clinic&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-gray-800 text-white p-6 text-center text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&amp;copy; 2025 Op. Dr. Ali AYDIN.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="lang-en"&gt;All rights reserved.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="lang-fr hidden"&gt;Tous droits réservés.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="lang-tr hidden"&gt;Tüm hakları saklıdır.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Language Switcher Logic ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentLang = 'en';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Element Definitions moved to the top to resolve ReferenceError ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenuButton = document.getElementById('mobile-menu-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenu = document.getElementById('mobile-menu');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const termInput = document.getElementById('term-input');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const explainButton = document.getElementById('explain-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const explanationOutput = document.getElementById('explanation-output');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const explanationText = document.getElementById('explanation-text');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const explanationSources = document.getElementById('explanation-sources');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const sourceList = document.getElementById('source-list');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const loadingIndicator = document.getElementById('loading-indicator');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const errorMessage = document.getElementById('error-message');</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Translations for UI elements and AI system prompts (Added Turkish 'tr')</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const uiTranslations = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'en': {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-term': 'Please enter a medical term to explain.',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-api': 'An error occurred: [ERROR]. Please try again.',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'system-prompt': "You are a friendly, knowledgeable, and professional medical educator. Your task is to take a complex medical term provided by the user and explain it in simple, easy-to-understand language suitable for a general audience. The explanation must be concise (max 3-4 sentences). Please respond in English.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-generation': 'Could not generate an explanation. Please try a different term.',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'fr': {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-term': 'Veuillez entrer un terme médical à expliquer.',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-api': 'Une erreur est survenue : [ERROR]. Veuillez réessayer.',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'system-prompt': "Vous êtes un éducateur médical amical, compétent et professionnel. Votre tâche consiste à prendre un terme médical complexe fourni par l'utilisateur et à l'expliquer dans un langage simple et facile à comprendre, adapté à un public général. L'explication doit être concise (max 3-4 phrases). Veuillez répondre en français.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-generation': "Impossible de générer une explication. Veuillez essayer un autre terme.",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'tr': {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-term': 'Lütfen açıklanacak bir tıbbi terim girin.',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-api': 'Bir hata oluştu: [ERROR]. Lütfen tekrar deneyin.',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'system-prompt': "Sen güler yüzlü, bilgili ve profesyonel bir tıp eğiticisisin. Görevin, kullanıcı tarafından sağlanan karmaşık bir tıbbi terimi, genel bir kitle için uygun, basit ve anlaşılır bir dille açıklamaktır. Açıklama kısa ve öz olmalıdır (maksimum 3-4 cümle). Lütfen Türkçe yanıt verin.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>'error-generation': 'Açıklama oluşturulamadı. Lütfen farklı bir terim deneyin.',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setLanguage(lang) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentLang = lang;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Toggle visibility of language-specific elements</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-en').forEach(el =&gt; el.classList.toggle('hidden', lang !== 'en'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-fr').forEach(el =&gt; el.classList.toggle('hidden', lang !== 'fr'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-tr').forEach(el =&gt; el.classList.toggle('hidden', lang !== 'tr')); // Added Turkish</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update flag button active state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.flag-button').forEach(btn =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById(`lang-${lang}-btn`).classList.add('active');</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Close mobile menu</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (mobileMenu) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>mobileMenu.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Clear previous AI output/errors when switching language</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (explanationOutput) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>explanationOutput.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>errorMessage.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>loadingIndicator.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initial language setting</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setLanguage('en');<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Add event listeners for language buttons</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('lang-en-btn').addEventListener('click', () =&gt; setLanguage('en'));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('lang-fr-btn').addEventListener('click', () =&gt; setLanguage('fr'));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('lang-tr-btn').addEventListener('click', () =&gt; setLanguage('tr')); // Added Turkish listener</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- Mobile Menu Toggle Logic Event Listeners ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (mobileMenuButton &amp;&amp; mobileMenu) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenuButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>mobileMenu.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Close mobile menu when a link is clicked</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenu.querySelectorAll('a').forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>link.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>mobileMenu.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// ----------------------------------------------------------------------------------</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// GEMINI API INTEGRATION LOGIC</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// ----------------------------------------------------------------------------------</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const MAX_RETRIES = 5;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Utility function for robust API calls with exponential backoff</p>
+<p class="p1"><span class="Apple-converted-space">        </span>async function fetchWithExponentialBackoff(url, options, retries = 0) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const response = await fetch(url, options);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (response.status === 429 &amp;&amp; retries &lt; MAX_RETRIES) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const delay = Math.pow(2, retries) * 1000;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// console.warn(`Rate limit hit, retrying in ${delay / 1000}s...`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>await new Promise(resolve =&gt; setTimeout(resolve, delay));</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return fetchWithExponentialBackoff(url, options, retries + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!response.ok) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const errorBody = await response.json();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>throw new Error(errorBody.error?.message || `HTTP error! status: ${response.status}`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return response;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (retries &lt; MAX_RETRIES) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const delay = Math.pow(2, retries) * 1000;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// console.warn(`Network error, retrying in ${delay / 1000}s...`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>await new Promise(resolve =&gt; setTimeout(resolve, delay));</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return fetchWithExponentialBackoff(url, options, retries + 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>throw error;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>explainButton.addEventListener('click', async () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const term = termInput.value.trim();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const currentLangUI = uiTranslations[currentLang];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!term) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>errorMessage.textContent = currentLangUI['error-term'];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>errorMessage.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>explanationOutput.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset UI state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>explanationOutput.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>errorMessage.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>loadingIndicator.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>explainButton.disabled = true;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const systemPrompt = currentLangUI['system-prompt'];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const userQuery = `Expliquer le terme médical: "${term}"`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const apiKey = "";<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const payload = {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>contents: [{ parts: [{ text: userQuery }] }],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tools: [{ "google_search": {} }],<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>systemInstruction: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>parts: [{ text: systemPrompt }]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const response = await fetchWithExponentialBackoff(apiUrl, {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>headers: { 'Content-Type': 'application/json' },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>body: JSON.stringify(payload)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const result = await response.json();</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const candidate = result.candidates?.[0];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (candidate &amp;&amp; candidate.content?.parts?.[0]?.text) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const text = candidate.content.parts[0].text;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// 1. Update generated text</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>explanationText.innerHTML = text.replace(/\n/g, '&lt;br&gt;'); // Preserve line breaks</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// 2. Extract and display grounding sources</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let sources = [];</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const groundingMetadata = candidate.groundingMetadata;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>sourceList.innerHTML = ''; // Clear previous sources</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (groundingMetadata &amp;&amp; groundingMetadata.groundingAttributions) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>sources = groundingMetadata.groundingAttributions</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>.map(attribution =&gt; ({</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>uri: attribution.web?.uri,</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>title: attribution.web?.title,</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}))</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>.filter(source =&gt; source.uri &amp;&amp; source.title);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (sources.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>sources.forEach(source =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const listItem = document.createElement('li');</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const link = document.createElement('a');</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link.href = source.uri;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link.target = '_blank';</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link.rel = 'noopener noreferrer';</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link.textContent = source.title;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link.classList.add('underline', 'hover:text-blue-600', 'truncate', 'block');</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>listItem.appendChild(link);</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>sourceList.appendChild(listItem);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>explanationSources.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>explanationSources.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>explanationOutput.classList.remove('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>errorMessage.textContent = currentLangUI['error-generation'];</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>errorMessage.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error('Gemini API Error:', error);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>let displayError = currentLangUI['error-api'].replace('[ERROR]', error.message);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>errorMessage.textContent = displayError;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>errorMessage.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} finally {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>loadingIndicator.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>explainButton.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
